@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Paw Haven</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="main.js" defer ></script>
+</head>
+<body>
+
+  <header>
+    <a href="#home" class="paw">Paw Haven</a>
+
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#animals">Our Animals</a>
+      <a href="#about">About Us</a>
+    </nav>
+  </header>
+
+  <main>
+    <section id="home" class="section">
+      <div>
+        <p class="head">GIVE A PET A SECOND CHANCE</p>
+        <h1>Find your new best friend.</h1>
+        <p>
+          Every animal deserves love, care, and a place to call home.
+          Meet your future companion today.
+        </p>
+        <a href="#animals" class="meet">Meet Our Animals</a>
+      </div>
+    </section>
+
+    <section id="animals" class="animals-section">
+      <p class="head">READY FOR A FOREVER HOME</p>
+      <h2>Meet Our Animals</h2>
+      <p>These lovely animals are waiting for a family.</p>
+
+
+      <div >
+        <button class="button" data-type="all">All</button>
+        <button class="button" data-type="Dog">Dogs</button>
+        <button class="button" data-type="Cat">Cats</button>
+      </div>
+
+     
+<div id="animal-list" class="animal-grid">
+
+  <div class="animal-card" data-type="Dog">
+    <img
+      src="https://images.unsplash.com/photo-1552053831-71594a27632d?auto=format&fit=crop&w=600&q=80"
+      alt="Buddy the dog"
+    >
+    <div class="animal-info">
+      <h3>Buddy</h3>
+      <p>Dog 2 years old</p>
+      <p>A friendly dog who loves playing.</p>
+      <button type="button" class="adopt-button" data-name="Buddy">
+        Adopt Me
+      </button>
+    </div>
+  </div>
+
+  <div  class="animal-card" data-type="Cat">
+    <img
+      src="https://images.unsplash.com/photo-1573865526739-10659fec78a5?auto=format&fit=crop&w=600&q=80"
+      alt="Luna the cat"
+    >
+    <div class="animal-info">
+      <h3>Luna</h3>
+      <p>Cat 1 year old</p>
+      <p>A gentle cat who enjoys cuddles.</p>
+      <button type="button" class="adopt-button" data-name="Luna">
+        Adopt Me
+      </button>
+    </div>
+  </div>
+
+  <div class="animal-card" data-type="Dog">
+    <img
+      src="https://images.unsplash.com/photo-1543466835-00a7907e9de1?auto=format&fit=crop&w=600&q=80"
+      alt="Max the dog"
+    >
+    <div class="animal-info">
+      <h3>Max</h3>
+      <p>Dog  3 years old</p>
+      <p>An energetic dog who loves adventures.</p>
+      <button type="button" class="adopt-button" data-name="Max">
+        Adopt Me
+      </button>
+    </div>
+  </div>
+
+  <div class="animal-card" data-type="Cat">
+    <img
+      src="https://images.unsplash.com/photo-1514888286974-6c03e2ca1dba?auto=format&fit=crop&w=600&q=80"
+      alt="Milo the cat"
+    >
+    <div class="animal-info">
+      <h3>Milo</h3>
+      <p>Cat 8 months old</p>
+      <p>A playful kitten looking for a loving home.</p>
+      <button type="button" class="adopt-button" data-name="Milo">
+        Adopt Me
+      </button>
+    </div>
+  </div>
+
+</div>
+ 
+    </section>
+
+    <section id="about" class="about-section">
+      <h2>About Paw Haven</h2>
+      <p>
+        We believe every animal deserves a safe home and a loving family.
+        Our mission is to connect wonderful animals with caring people.
+      </p>
+    </section>
+
+    <section id="adoption" class="adoption-section">
+      <h2>Interested in adopting?</h2>
+      <p>Tell us a little about yourself and your future companion.</p>
+
+      <form id="adoption-form">
+        <label for="adopter-name">Your name</label>
+        <input id="adopter-name" type="text" required>
+
+        <label for="adopter-email">Email address</label>
+        <input id="adopter-email" type="email" required>
+
+        <label for="selected-animal">Animal you want to adopt</label>
+        <input id="selected-animal" type="text"  required>
+
+        <button type="submit" class="button">Send Adoption Interest</button>
+      </form>
+
+      <p id="form-message" role="status" aria-live="polite"></p>
+    </section>
+  </main>
+
+  <footer>
+    <p> Paw Haven — Every paw deserves a home.<br>
+        &copy;Paw Haven.All rights resreved.
+    </p>
+  </footer>
+
+</body>
+</html>
