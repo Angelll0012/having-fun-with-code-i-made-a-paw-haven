@@ -1,4 +1,3 @@
-
 // find the animal cards and their controls
 const animalCards = document.querySelectorAll(".animal-card");
 const filterButtons = document.querySelectorAll(".buttons button");
